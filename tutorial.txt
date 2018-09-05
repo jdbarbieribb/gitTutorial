@@ -1,0 +1,2 @@
+Enviar as mudanças para o GitHub:
+	git push -u origin master
