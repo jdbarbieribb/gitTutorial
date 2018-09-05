@@ -1,4 +1,6 @@
 
+	- comando: git add tutorial.txt
+
 Comitar o arquivo alterado:
 	- comando: git commit -m "?1"
 		?1 informação sobre a alteração executada
