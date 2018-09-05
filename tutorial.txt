@@ -1,5 +1,7 @@
-
-	- comando: git add tutorial.txt
+Preparar os arquivos para comitar:
+	- comando: git add ?1
+		?1 nome do arquivo que vai comitar
+		Ex.: git add tutorial.txt
 
 Comitar o arquivo alterado:
 	- comando: git commit -m "?1"
@@ -13,11 +15,26 @@ Enviar um repositório local para o github por linha de comando:
 		?2 estrutura do repositório no gihub
 		Ex.: git remote add originTutorial https://github.com/jdbarbieribb/gitTutorial.git
 
-Enviar as mudanças para o GitHub:
+Enviar as mudanças para o github:
 	- comando: git push -u ?1 master
 		?1 nome para determinar a origem do remoto
 		Ex.: - git push -u originTutorial master
 		
+Buscar as mudanças do github:
+	- comando: git pull -u ?1 master
+		?1 nome para determinar a origem do remoto
+		Ex.: - git pull -u originTutorial master
+		
+Definir versões (release) do repositório:
+	- comando: git tag -a ?2 -m "?1"
+		?1 informação do release
+		?2 versão do release
+		Ex.: git tag -a 0.7 -m "70% do tutorial basico"
+	- comando: git push -u ?1 master --tags
+		?1 nome para determinar a origem do remoto
+		Ex.: - git push -u originTutorial master --tags
+		
 Estabelecer conexão através do proxy:
 	- comando: git config --global http.proxy http://<User>:<Password>@localhost:40080
 		- Endereço/Porta para acesso no BB é localhost:40080
+
