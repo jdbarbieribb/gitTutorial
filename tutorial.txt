@@ -1,2 +1,21 @@
+
+Comitar o arquivo alterado:
+	- comando: git commit -m "?1"
+		?1 informação sobre a alteração executada
+		Ex.: git commit -m "Meu primeiro commit"
+
+Enviar um repositório local para o github por linha de comando:
+	- criar um repositório no gihub
+	- comando: git remote add ?1 https://github.com/?2
+		?1 nome para determinar a origem do remoto
+		?2 estrutura do repositório no gihub
+		Ex.: git remote add originTutorial https://github.com/jdbarbieribb/gitTutorial.git
+
 Enviar as mudanças para o GitHub:
-	git push -u origin master
+	- comando: git push -u ?1 master
+		?1 nome para determinar a origem do remoto
+		Ex.: - git push -u originTutorial master
+		
+Estabelecer conexão através do proxy:
+	- comando: git config --global http.proxy http://<User>:<Password>@localhost:40080
+		- Endereço/Porta para acesso no BB é localhost:40080
